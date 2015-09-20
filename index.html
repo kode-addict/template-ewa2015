@@ -4,80 +4,333 @@
 	<title>Mae Pay Soh - Web Application</title>
 	<link rel="stylesheet" type="text/css" href="bower_components/semantic/dist/semantic.min.css">
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>	
+	<script src="bower_components/semantic/dist/semantic.js"></script>
 	<style type="text/css">
+		.header-text {
+			padding-top: 200px;
+		}
 		.slogan {
-			min-height: 200px;
-			margin-top: 150px;
+			background: url('image/background.jpg') fixed;
+			background-size: cover;
+			min-height: 450px;
 		}
 		.total-list {
-			position: relative;
-			min-height: 300px;
+			/*position: relative;*/
+			/*min-height: 300px;*/
+		}
+		.hot-candidate-card {
+			margin-top: 50px !important;
+		}
+		.hot-candidate-header {
+			margin-top: 50px !important;
+		}
+		.wrapper {
+			margin-top: 50px;
+		}
+		.footer-wide {
+			margin-top: 50px !important;
+			padding: 100px 0 !important;
 		}
 	</style>	
 </head>
 <body>
-	<header>
-		<div class="ui fixed menu">
-			<div class="ui container">
-				<div class="header item">
-					<!-- <img class="logo" src="assets/images/logo.png"> -->
-					Mae Pay Soh
+	<div class="ui vertical inverted right wide sidebar labeled icon menu">
+		<a href="#" class="item">Home</a>
+		<a href="#" class="item">Party</a>
+		<a href="#" class="item">Candidate</a>
+		<a href="#" class="item">Voter Education</a>
+		<a href="#" class="item">About</a>
+		<a href="#" class="item">Test Link</a>
+	</div>
+
+	<div class="dimmed pusher">
+		<header>
+			<div class="ui fixed menu">
+				<div class="ui container">
+					<div class="header item">
+						<!-- <img class="logo" src="assets/images/logo.png"> -->
+						Mae Pay Soh
+					</div>
+					
+					<div class="right menu">					
+						<a href="#" class="item" onclick="$('.ui.sidebar').sidebar('toggle');">
+							<i class="sidebar icon"></i> Menu					
+						</a>
+					</div>
 				</div>
+			</div>			
+		</header> <!-- HEADER END -->
+
+		<section class="slogan"> 
+			<div class="ui center aligned text container header-text">
+				<h1 class="ui header">
+					Mae Pay Soh Web Application
+				</h1>
+				<p>
+					Lorem Ispum Hello World
+				</p>			
+			</div>		
+		</section> <!-- Slogan END -->
+
+		<section class="total-list">	
+		</section> <!-- Link to Everything END -->
+
+		<section class="hot-candidate">
+			<div class="ui vertical segment">
+				<div class="hot-candidate-header">
+					<h1 class="ui center aligned header">
+						Hot Candidate
+	 					<div class="sub header">This is Some Hot Candidate</div>
+					</h1>				
+				</div> <!-- Candidate Header END -->
+				<div class="ui three column center aligned grid hot-candidate-card container">
+					<div class="ui four link cards">
+						<div class="card">
+							<div class="image">
+								<img src="file:///home/johnreginald/Offline/semantic-ui/semantic-ui.com/images/avatar2/large/matthew.png">
+							</div>
+
+							<div class="content">
+								<div class="header">Matt Giampietro</div>
+
+								<div class="meta">
+								<a>Friends</a>
+								</div>
+
+								<div class="description">
+									Matthew is an interior designer living in New York.
+								</div>
+							</div>
+
+							<div class="extra content">
+								
+								<span class="right floated">
+									Joined in 2013
+								</span>
+
+								<span>
+									<i class="user icon"></i>
+									75 Friends
+								</span>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="image">
+								<img src="file:///home/johnreginald/Offline/semantic-ui/semantic-ui.com/images/avatar2/large/matthew.png">
+							</div>
+							<div class="content">
+								<div class="header">Molly</div>
+								<div class="meta">
+									<span class="date">Coworker</span>
+								</div>
+								<div class="description">
+									Molly is a personal assistant living in Paris.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Joined in 2011
+								</span>
+								<span>
+									<i class="user icon"></i>
+									35 Friends
+								</span>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="image">
+								<img src="file:///home/johnreginald/Offline/semantic-ui/semantic-ui.com/images/avatar2/large/matthew.png">
+							</div>
+							<div class="content">
+								<div class="header">Elyse</div>
+								<div class="meta">
+									<a>Coworker</a>
+								</div>
+								<div class="description">
+									Elyse is a copywriter working in New York.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Joined in 2014
+								</span>
+								<span>
+									<i class="user icon"></i>
+									151 Friends
+								</span>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="image">
+								<img src="file:///home/johnreginald/Offline/semantic-ui/semantic-ui.com/images/avatar2/large/matthew.png">
+							</div>
+							<div class="content">
+								<div class="header">Molly</div>
+								<div class="meta">
+									<span class="date">Coworker</span>
+								</div>
+								<div class="description">
+									Molly is a personal assistant living in Paris.
+								</div>
+							</div>
+							<div class="extra content">
+								<span class="right floated">
+									Joined in 2011
+								</span>
+								<span>
+									<i class="user icon"></i>
+									35 Friends
+								</span>
+							</div>
+						</div>
+
+					</div>	    
+				</div>			
+			</div>
+		</section> <!-- Hot Cardidate END -->
+		
+		<div class="wrapper"></div>
+
+		<section class="search-everything"> 
+			<div class="ui grid">
+				<div class="ui one column centered grid">
+					
+					<div class="ten wide computer column sixteen wide mobile">
+
+						<div class="ui three column grid" id="indicator">
+							<div class="column"><h5 id="step1header" class="ui header">1.Chose State  <i class="hidden checkmark green icon"></i> </h5></div>	
+							<div class="column"><h5 id="step2header" class="ui header grey">2.Chose District <i class="hidden checkmark green icon"></i> </h5></div>	
+							<div class="column"><h5 id="step3header" class="ui header grey">3.Chose Township <i class="hidden checkmark green icon"></i> </h5></div>				
+						</div>
 				
-				<div class="right menu">					
-					<a href="#" class="item">
-						<i class="sidebar icon"></i> Menu					
-					</a>
+					</div>
+
+					<div class="ui segment ten wide computer column questionBox sixteen wide mobile">
+						<div id="step1">
+							<h3>Select Your State First</h3>
+							<div class="ui form">
+							  	<div class="field">
+							    	<select>
+									    <option value="">Select State</option>
+									    <option value="Kachin">Kachin</option>
+									    <option value="Kayah">Kayah</option>
+									    <option value="Kayin">Kayin</option>
+									    <option value="Chin">Chin</option>
+									    <option value="Mon">Mon</option>
+									    <option value="Rakhine">Rakhine</option>
+									    <option value="Shan">Shan</option>
+									    <option value="Yangon">Yangon</option>
+									    <option value="Mandalay">Mandalay</option>
+									    <option value="Magway">Magway</option>
+									    <option value="Naypyitaw">Naypyitaw</option>
+									    <option value="Ayeyarwaddy">Ayeyarwaddy</option>
+									    <option value="Rakhine">Bago</option>
+								      	<option value="Sagaing">Sagaing</option>
+							    	</select>
+							  	</div>
+							  	<button class="ui button green done">Done</button>
+							</div>
+						</div>
+						<div id="step2">
+
+
+							<h3>Select Your District</h3>
+							<div class="ui form">
+							  	<div class="field">
+							    	<select>
+									    <option value="">Select District</option>
+							    	</select>
+							  	</div>
+							  	<button class="ui button green back">Back</button>
+							  	<button class="ui button green done">Done</button>
+							</div>
+
+							<div class="ui active inverted dimmer">
+							    <div class="ui text loader">Loading</div>
+							</div>
+						</div>
+
+						<div id="step3">
+
+							<h3>Select Your TownShip</h3>
+							<div class="ui form">
+								<form action="{{ url('candidate') }}" method="GET">
+
+								  	<div class="field">
+								    	<select name="constituency_ts_pcode">
+										    <option value="">Select State</option>
+								    	</select>
+								  	</div>
+
+								  	<button class="ui button green back">Back</button>
+								  	<button class="ui button green done">Search</button>
+
+							  	</form>
+							</div>
+							<div class="ui active inverted dimmer">
+							    <div class="ui text loader">Loading</div>
+							</div>
+						</div>			
+					</div><!-- end segment-->
+
 				</div>
 			</div>
-		</div>			
-	</header> <!-- HEADER END -->
+		</section> <!-- Search Everything END -->
 
-	<section class="ui inverted vertical center aligned segment"> 
-		<div class="ui slogan text container">
-			<h1 class="ui header">
-				Mae Pay Soh Web Application
-			</h1>
-			<p>
-				Lorem Ispum Hello World
-			</p>			
-		</div>
-	</section> <!-- Slogan END -->
+		<div class="ui black inverted vertical footer-wide segment">
+			<div class="ui three column container grid">
+				<div class="column">
+					<div class="ui vertical text container segment">
+						<div class="ui list">
+						  	<a class="item">What is a FAQ?</a>
+						  	<a class="item">Who is our user?</a>
+						  	<a class="item">Where is our office located?</a>
+						</div>					
+					</div>
+				</div>
 
-	<section class="total-list">	
-		<div class="ui three column center aligned grid">
-		  	<div class="center aligned column">
-		  		<img src="http://semantic-ui.com/images/avatar2/large/patrick.png" class="ui medium circular image">
-		  	</div>
+				<div class="column">
+					<div class="ui vertical center aligned segment">
+						<a href="#">Under Opensource License GNU / GPL</a>
+					</div>
+				</div>
 
-		  	<div class="center aligned column">
-		     	<img src="http://semantic-ui.com/images/avatar2/large/patrick.png" class="ui medium circular image">
-		    </div>
+				<div class="column">
+					<div class="ui vertical center aligned segment">
+						<p>Mae Pay Soh Web Application</p>
+						<p>Developed By Kode Addict Team</p>
+					</div>
+				</div>
+			</div>
+		</div> <!-- FOOTER END -->	
+	</div>
 
-		  	<div class="center aligned column">
-		     	<img src="http://semantic-ui.com/images/avatar2/large/patrick.png" class="ui medium circular image">
-		    </div>		    
+		<div class="ui fixed bottom fluid container sticky">
+			<div class="ui grid">
+				<div class="column">
+					<div class="ui floating message raised segment">
+						<i class="close icon"></i>
+						<div class="ui header">Hello World</div>
+						<p>This is a special notification which you can dismiss if you're bored with it.</p>								
+					</div>									
+				</div>							
+			</div>
 		</div>	
-	</section> <!-- Link to Everything END -->
 
-	<section class="hot-cardidate"> 
-		
-	</section> <!-- Hot Cardidate END -->
+		<script type="text/javascript">
+$('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
+		</script>
 
-	<section class="search-everything"> 
-		
-	</section> <!-- Search Everything END -->
-
-	<section class="search-by-location"> 
-		
-	</section> <!-- Search By Location END -->
-
-	<section class="cps">
-		
-	</section>	<!-- Cardidate Party Solo END -->
-
-	<footer>
-		
-	</footer> <!-- FOOTER END -->
 </body>
 </html>
