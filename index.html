@@ -14,10 +14,6 @@
 			background-size: cover;
 			min-height: 450px;
 		}
-		.total-list {
-			/*position: relative;*/
-			/*min-height: 300px;*/
-		}
 		.hot-candidate-card {
 			margin-top: 50px !important;
 		}
@@ -322,14 +318,9 @@
 		</div>	
 
 		<script type="text/javascript">
-$('.message .close')
-  .on('click', function() {
-    $(this)
-      .closest('.message')
-      .transition('fade')
-    ;
-  })
-;
+			$('.message .close').on('click', function() {
+			    $(this).closest('.message').transition('fade');			    
+			  });
 		</script>
 
 </body>
